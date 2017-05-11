@@ -1,0 +1,90 @@
+:root {
+  --background: #2980b9;
+  --text: #FFC82C;
+  --bodyText: 'Roboto', sans-serif;
+  --displayText: 'Merriweather', serif;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: var(--bodyText)
+}
+
+body {
+  font-size: inherit;
+  color: #333;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--background);
+  flex:1 1 auto;
+}
+
+.home-logo { /* h1 */
+  font-family: var(--displayText);
+  margin: 0;
+}
+
+.home-navbar { /* nav */
+  margin: 0;
+}
+
+.home-list { /* ul */
+  list-style: none;
+}
+
+.home-list li {
+  display: inline-block;
+}
+
+
+.home-body { 
+  flex:15 0 auto;
+  background-color: var(--text)  
+}
+
+.home-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+flex:1 1 auto;
+  background-color: var(--background);
+    
+}
+
+.footer-left {
+
+}
+
+.footer-right {
+
+}
